@@ -20,7 +20,7 @@ A comparative study of client selection strategies.
 
 ---
 
-### 🔹 Design Space Analysis
+### Design Space Analysis
 A study of the design space of federated learning systems, including 
 trade-offs between communication, computation, scalability, and robustness.
 
