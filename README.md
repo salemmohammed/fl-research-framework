@@ -20,6 +20,13 @@ A comparative study of client selection strategies.
 
 ---
 
+### 🔹 Design Space Analysis
+A study of the design space of federated learning systems, including 
+trade-offs between communication, computation, scalability, and robustness.
+
+[Full documentation](./design-space-analysis/README.md)
+
+---
 ## Flower Framework
 
 This work is built on top of Flower.
