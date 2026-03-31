@@ -104,6 +104,6 @@ This package is separate from flwr and must be installed manually.
 Fix: python -m poetry run pip install "flwr-datasets[vision]"
 
 ### poetry command not found after creating conda env
-Poetry is not automatically available in new conda environments.
+Poetry is not automatically available in new conda environments.  
 Fix: pip install poetry==1.7.1 inside the new environment first.
 
