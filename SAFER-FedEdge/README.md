@@ -18,20 +18,20 @@ git clone https://github.com/salemmohammed/fl-research-framework.git
 cd fl-research-framework
 
 ### 2. Create a Python 3.11 environment
-conda create -n flower-env python=3.11
+conda create -n flower-env python=3.11  
 conda activate flower-env
 
 ### 3. Install Poetry inside the environment
-pip install poetry==1.7.1
+pip install poetry==1.7.1  
 
 ### 4. Tell Poetry to use this environment's Python
-python -m poetry env use $(which python)
+python -m poetry env use $(which python)  
 
 ### 5. Install Flower and all dependencies from source
-python -m poetry install --all-extras
+python -m poetry install --all-extras  
 
 ### 6. Fix numpy conflict
-python -m poetry run pip install "numpy<2.0.0"
+python -m poetry run pip install "numpy<2.0.0"  
 
 ### 7. Install example dependencies
 python -m poetry run pip install "flwr-datasets[vision]" torch torchvision tqdm
@@ -68,8 +68,8 @@ Expected output in Terminal 1 after 3 rounds:
 
 ## Run simulation mode (recommended for paper)
 
-One command, no separate terminals, simulates N clients on one machine.
-This is the mode used for SAFER-FedEdge experiments:
+One command, no separate terminals, simulates N clients on one machine.  
+This is the mode used for SAFER-FedEdge experiments:  
     python -m poetry run python examples/simulation-pytorch/sim.py
 
 ## Project structure
@@ -86,21 +86,21 @@ fl-research-framework/
 ## Troubleshooting
 
 ### Python 3.13 not supported
-Flower 1.10.0 requires Python 3.8-3.12.
-ruamel-yaml-clib fails to compile on Python 3.13.
+Flower 1.10.0 requires Python 3.8-3.12.  
+ruamel-yaml-clib fails to compile on Python 3.13.  
 Fix: use Python 3.11 via conda (see Setup step 2).
 
 ### numpy conflict
-flwr-datasets installs numpy>=2.0 but Flower 1.10.0 requires numpy<2.0.
+flwr-datasets installs numpy>=2.0 but Flower 1.10.0 requires numpy<2.0.  
 Fix: python -m poetry run pip install "numpy<2.0.0"
 
 ### zsh bracket error
-zsh interprets square brackets as glob patterns.
-Wrong:  pip install flwr-datasets[vision]
+zsh interprets square brackets as glob patterns.  
+Wrong:  pip install flwr-datasets[vision]  
 Right:  pip install "flwr-datasets[vision]"
 
 ### flwr_datasets not found
-This package is separate from flwr and must be installed manually.
+This package is separate from flwr and must be installed manually.  
 Fix: python -m poetry run pip install "flwr-datasets[vision]"
 
 ### poetry command not found after creating conda env
