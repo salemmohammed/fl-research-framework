@@ -37,8 +37,8 @@ python -m poetry run pip install "numpy<2.0.0"
 python -m poetry run pip install "flwr-datasets[vision]" torch torchvision tqdm
 
 ### 8. Verify the installation
-python -m poetry run python -c "import flwr; print(flwr.__file__)"
-python -m poetry run python -c "import flwr; print(flwr.__version__)"
+python -m poetry run python -c "import flwr; print(flwr.__file__)"  
+python -m poetry run python -c "import flwr; print(flwr.__version__)"  
 python -m poetry run python -c "import numpy; print(numpy.__version__)"
 
 Expected output:
