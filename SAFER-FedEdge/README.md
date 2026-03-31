@@ -73,13 +73,15 @@ This is the mode used for SAFER-FedEdge experiments:
     python -m poetry run python examples/simulation-pytorch/sim.py
 
 ## Project structure
-
+```
 fl-research-framework/
-├── SAFER-FedEdge/          <- our implementation (paper)
+├── SAFER-FedEdge/          ← our implementation (paper)
 │   └── README.md
-├── src/py/flwr/            <- Flower source code (do not modify)
-├── examples/               <- Flower examples (reference only)
-└── pyproject.toml          <- root build file
+├── src/py/flwr/            ← Flower source code (do not modify)
+├── examples/               ← Flower examples (reference only)
+└── pyproject.toml          ← root build file
+```
+
 
 ## Troubleshooting
 
